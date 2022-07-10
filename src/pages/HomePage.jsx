@@ -4,7 +4,6 @@ import instance from "../axiosConfig";
 import TodoLists from "../components/TodoLists";
 import { useContext } from "react";
 import { TodosContext } from "../App";
-import Ellipsis from '../assets/Ellipsis.svg'
 
 function HomePage() {
   
@@ -17,6 +16,7 @@ function HomePage() {
 
   useEffect(() => {
     fetchTodos();
+    // eslint-disable-next-line
   }, []);
 
   return (
