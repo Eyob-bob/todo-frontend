@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import instance from "../axiosConfig";
-import { useParams, useNavigate, Navigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const EditPage = () => {
   const [todo, setTodo] = useState("");
@@ -17,6 +17,7 @@ const EditPage = () => {
 
   useEffect(() => {
     fetchTodo();
+    // eslint-disable-next-line
   }, []);
 
   return (

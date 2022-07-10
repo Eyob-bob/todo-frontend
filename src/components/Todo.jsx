@@ -1,10 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import instance from "../axiosConfig";
 
 const Todo = ({ todo, setTodos }) => {
-  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <li className="shadow-sm flex justify-between items-center">
