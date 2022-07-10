@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#1A2238];
+}
+
+.btn {
+    @apply capitalize py-1 px-2 rounded-md text-white;
+}
